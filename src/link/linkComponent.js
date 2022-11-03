@@ -1,6 +1,8 @@
 import React from "react";
 import slack from "../assets/slack.svg";
 import github from "../assets/Social icon.svg";
+import { Link } from 'react-router-dom';
+
 
 import "./link.css";
 
@@ -39,6 +41,13 @@ const linkComponent = () => {
           <a id="book__design" href="https://books.zuri.team/design-rules">
             Design Books
           </a>
+        </li>
+        <li>
+          <Link to="/contact">
+            <a id="contact" href="#">
+              Contact Me
+            </a>
+          </Link>
         </li>
       </ul>
       <div className="socials">
